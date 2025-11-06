@@ -25,7 +25,7 @@ npm install
      SMTP_PORT=587
      SMTP_USER=your-email@gmail.com
      SMTP_PASS=your-app-password
-     PORT=3000
+     PORT=3002
      ```
 
 ## Running the Application
@@ -40,7 +40,7 @@ npm run dev
 npm start
 ```
 
-The server will run on `http://localhost:3000` (or the port specified in `.env`).
+The server will run on `http://localhost:3002` (or the port specified in `.env`).
 
 ## SMTP Configuration
 
