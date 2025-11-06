@@ -18,7 +18,7 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 // Routes
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Contact form endpoint
