@@ -68,7 +68,7 @@ MangalPrimeLanding/
 
 ## Contact Form
 
-The contact form sends emails to: `info@mangalcanada.com`
+The contact form sends emails to: `info@mangalprime.com`
 
 Required fields:
 - First Name

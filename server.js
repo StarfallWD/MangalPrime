@@ -51,7 +51,7 @@ app.post('/api/contact', async (req, res) => {
     // Email content
     const mailOptions = {
       from: process.env.SMTP_USER,
-      to: 'info@mangalcanada.com',
+      to: 'info@mangalprime.com',
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       html: `
                 <h2>New Contact Form Submission</h2>
