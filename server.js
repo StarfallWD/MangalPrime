@@ -2,81 +2,45 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
+const fs = require('fs');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public'));
 
-// Serve static files (logo, images)
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
-
-// Routes
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-// Contact form endpoint
-app.post('/api/contact', async (req, res) => {
-  try {
-    const { firstName, lastName, email, phone, message } = req.body;
-
-    // Validate required fields
-    if (!firstName || !lastName || !email || !message) {
-      return res.status(400).json({
-        success: false,
-        message: 'Please fill in all required fields.'
-      });
+// API: serve menu from external JSON file
+app.get('/api/menu', (req, res) => {
+  const menuPath = path.join(__dirname, 'data', 'menu.json');
+  fs.readFile(menuPath, 'utf8', (err, data) => {
+    if (err) {
+      console.error('Menu file read error:', err);
+      return res.status(500).json({ error: 'Could not load menu' });
     }
-
-    // Email will be sent using nodemailer
-    const nodemailer = require('nodemailer');
-
-    // Create transporter (will be configured via environment variables)
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || 'smtp.gmail.com',
-      port: process.env.SMTP_PORT || 587,
-      secure: false,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS
-      }
-    });
-
-    // Email content
-    const mailOptions = {
-      from: process.env.SMTP_USER,
-      to: 'info@mangalprime.com',
-      subject: `New Contact Form Submission from ${firstName} ${lastName}`,
-      html: `
-                <h2>New Contact Form Submission</h2>
-                <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-                <p><strong>Email:</strong> ${email}</p>
-                <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-                <p><strong>Message:</strong></p>
-                <p>${message}</p>
-            `
-    };
-
-    await transporter.sendMail(mailOptions);
-
-    res.json({
-      success: true,
-      message: 'Thank you for your message! We will get back to you soon.'
-    });
-  } catch (error) {
-    console.error('Error sending email:', error);
-    res.status(500).json({
-      success: false,
-      message: 'An error occurred while sending your message. Please try again later.'
-    });
-  }
+    try {
+      const menu = JSON.parse(data);
+      res.json(menu);
+    } catch (e) {
+      console.error('Menu JSON parse error:', e);
+      res.status(500).json({ error: 'Invalid menu data' });
+    }
+  });
 });
+
+// Page routes first (so /, /menu, /about, /contact use new theme, not public/index.html)
+app.use(require('./routes/index.js'));
+app.use('/menu', require('./routes/menu.js'));
+app.use('/about', require('./routes/about.js'));
+app.use(require('./routes/contact.js'));
+app.use('/reservation', require('./routes/reservation.js'));
+app.use('/order', require('./routes/order.js'));
+
+// Static files (assets, favicon, etc.) – after routes so they don’t override pages
+app.use(express.static('public'));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

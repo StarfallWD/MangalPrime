@@ -1,0 +1,134 @@
+/* Header logo - 40% larger */
+.main-header .logo-box img {
+  width: 196px !important;
+}
+
+.main-header .sticky-header .logo-box {
+  max-width: 168px !important;
+}
+
+/* Banner slider image - full width of slide-item */
+.banner-section.style-one .banner-carousel .slide-item .content-inner .image-box.style-one {
+  width: 100vw;
+  left: 50%;
+  right: auto;
+  margin-left: -50vw;
+}
+
+.banner-section.style-one .banner-carousel .slide-item .content-inner .image-box.style-one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hide preloader "EARLS" loading text */
+.handle-preloader .txt-loading,
+.handle-preloader .letters-loading {
+  display: none !important;
+}
+
+/* Hide menu section title decorative :before and :after icons */
+.menu__from__section .center__title:before,
+.menu__from__section .center__title:after {
+  display: none !important;
+}
+
+/* Hide decorative images and animations after .main____title.p_relative */
+section:has(.main____title.p_relative) .anim-icon,
+section:has(.main____title.p_relative) .menu__img__block,
+section:has(.main____title.p_relative) .about__right__img,
+section:has(.main____title.p_relative) .food__right__img,
+section:has(.main____title.p_relative) .food___img___block,
+section:has(.main____title.p_relative) .image-box.style-one,
+section:has(.main____title.p_relative) .video__section__bg__img,
+section:has(.main____title.p_relative) .tab__img,
+section:has(.main____title.p_relative) .food__block__bottom .view-btn {
+  display: none !important;
+}
+
+/* Menu section buttons */
+.menu__from__section__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.menu__from__section__buttons .theme-btn-two {
+  padding: 12px 30px;
+}
+
+.video__section .tab__section__btn {
+  margin-top: 20px;
+}
+
+/* Hide avatar images from testimonials section */
+.customer__section .client_block_one .inner__box__left {
+  display: none !important;
+}
+
+.customer__section {
+  padding-bottom: 80px;
+}
+
+/* Spacing between testimonial content and nav arrows */
+.customer__section .client-carousel {
+  padding-bottom: 60px;
+}
+
+.customer__section .client_block_one .inner__box__right {
+  margin-left: 0;
+}
+
+/* Align testimonial nav arrows with content */
+.customer__section .client-carousel .owl-nav {
+  left: 0;
+}
+
+/* Hidden sidebar close button – same as mobile menu close */
+.hidden-sidebar .close-btn {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  line-height: 30px;
+  width: 24px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--theme-color);
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.9s ease;
+}
+.hidden-sidebar .close-btn:hover {
+  transform: rotate(90deg);
+}
+.hidden-sidebar.open .close-btn {
+  transform: rotate(360deg);
+}
+
+/* Contact page – spacing below contact info block */
+.contact__top {
+  padding-bottom: 3rem;
+}
+
+/* Hide Order Online link for now */
+.main-menu .navigation li:has(a[href="/order"]),
+.footer__menu li:has(a[href="/order"]),
+.mobile-menu li:has(a[href="/order"]) {
+  display: none !important;
+}
+
+/* Hide menu prices for now */
+.menu__from__section .name__price li:last-child,
+.our__choice__section .name__price li:last-child,
+.video__section .accordion-box .price {
+  display: none !important;
+}
+
+/* Hide wow/animated slide-in etc. on content after title */
+section:has(.main____title.p_relative) .wow.animated,
+section:has(.main____title.p_relative) [class*="wow"] {
+  visibility: visible !important;
+  animation: none !important;
+}

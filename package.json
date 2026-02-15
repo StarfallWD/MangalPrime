@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build-menu": "node scripts/build-menu-from-csv.js"
   },
   "keywords": ["landing", "page", "mangal", "prime"],
   "author": "",

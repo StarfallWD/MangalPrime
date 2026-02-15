@@ -1,0 +1,616 @@
+{
+  "categories": [
+    {
+      "name": "Cold Appetizers",
+      "items": [
+        {
+          "name": "SAKSUKA",
+          "description": "Eggplant with tomato sauce and peppers.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "SWEET & SAVORY YOGURT MEZZE",
+          "description": "Strained yogurt with pearl onions, garlic, honey, grape molasses and pomegranate molasses.",
+          "image": "",
+          "price": 1
+        },
+        {
+          "name": "ENGINAR IZGARA",
+          "description": "Grilled artichoke with garlic cloves, dill, onion, corn, olive oil and lemon.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "KABAK GIRIT",
+          "description": "Zucchini with strained yogurt, dill, garlic, olive oil and walnuts.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "KURU CACIK",
+          "description": "Strained yogurt with cucumber, garlic, dill, olive oil.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "KOPEOGLU",
+          "description": "Roasted eggplant with strained yogurt, garlic, tomato sauce, potatoes and roasted peppers.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "HUMUS",
+          "description": "Chickpeas blended with tahini, garlic, lemon, cumin, and topped with walnuts, with seasoned chickpeas.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "ATOM",
+          "description": "Yogurt with strained yogurt, olive oil and hot pepper.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "KOZ PATLICAN",
+          "description": "Smoked eggplant with roasted peppers, tomato, pomegranate molasses, lemon, olive oil and parsley.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "BABAGANUS",
+          "description": "Eggplant with strained yogurt, olive oil and garlic.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "YAPRAK SARMASI",
+          "description": "Vine leaves stuffed with rice, onion, tomato paste, spices.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "PANCAR BLUE CHEESE",
+          "description": "Roasted beet with blue cheese.",
+          "image": "",
+          "price": 12
+        },
+        {
+          "name": "BADEMLI HAVUC",
+          "description": "Strained yogurt, carrot, garlic, dill, sliced almonds.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "ANTEP ACILI EZME",
+          "description": "A zesty mix of minced tomato, onions, cucumber, and parsley, seasoned with herbs and a touch of pomegranate sauce.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "DOVME PATLICAN",
+          "description": "Eggplant with egg, olive oil, parsley and white cheese.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "GIRIT EZMESI",
+          "description": "White cheese, labneh, basil, olive oil, Antep pistachios.",
+          "image": "",
+          "price": 12
+        },
+        {
+          "name": "KARISIK EV TURSUSU",
+          "description": "Homemade mixed pickles.",
+          "image": "",
+          "price": 8
+        },
+        {
+          "name": "KAVUN PEYNIR",
+          "description": "Feta cheese with cantaloupe (or watermelon).",
+          "image": "",
+          "price": 17
+        },
+        {
+          "name": "MEYVE TABAGI",
+          "description": "Seasonal fruit plate.",
+          "image": "",
+          "price": 17
+        },
+        {
+          "name": "CIG KOFTE",
+          "description": "Spicy bulgur with black pepper and tomato.",
+          "image": "",
+          "price": 18
+        },
+        {
+          "name": "3 CHOICES",
+          "description": "Any 3 spreads.",
+          "image": "",
+          "price": 18
+        },
+        {
+          "name": "5 CHOICES",
+          "description": "Any 5 spreads.",
+          "image": "",
+          "price": 25
+        }
+      ],
+      "image": "/assets/images/resource/menu-01.png"
+    },
+    {
+      "name": "Hot Appetizers",
+      "items": [
+        {
+          "name": "CIGER TAVA",
+          "description": "Thinly sliced beef liver, sautéed with traditional spices.",
+          "image": "",
+          "price": 16
+        },
+        {
+          "name": "KARIDES GÜVEÇ",
+          "description": "Shrimp in tomato sauce with cheese.",
+          "image": "",
+          "price": 17
+        },
+        {
+          "name": "SIGARA BÖREĞI",
+          "description": "Feta cheese spring rolls.",
+          "image": "",
+          "price": 16
+        },
+        {
+          "name": "PASTIRMALI HUMUS",
+          "description": "Chickpeas blended with tahini, garlic, lemon, cumin, and topped with butter-cooked pastirma.",
+          "image": "",
+          "price": 15
+        },
+        {
+          "name": "KALAMAR",
+          "description": "Fried calamari with dip and salad.",
+          "image": "",
+          "price": 12
+        },
+        {
+          "name": "GOLDEN FRIED MUSHROOM",
+          "description": "Cornmeal-coated mushrooms with butter and melted cheese.",
+          "image": "",
+          "price": 12
+        },
+        {
+          "name": "HOT SEAFOOD TRAY",
+          "description": "Calamari & Shrimp.",
+          "image": "",
+          "price": 25
+        },
+        {
+          "name": "İÇLI KÖFTE",
+          "description": "Bulgur shell stuffed with beef, walnuts, tomato paste and spices, served on yogurt.",
+          "image": "",
+          "price": 13
+        }
+      ],
+      "image": "/assets/images/resource/menu-01.png"
+    },
+    {
+      "name": "Salads",
+      "items": [
+        {
+          "name": "COBAN SALAD",
+          "description": "Tomato, cucumber, green pepper, red onion, parsley, sweet red pepper, pomegranate molasses, olive oil and lemon.",
+          "image": "",
+          "price": 14
+        },
+        {
+          "name": "AKDENIZ KIRMA SALAD",
+          "description": "Tomato, red onion, arugula, lettuce, dill, beetroot, corn, cucumber, pomegranate seeds, parmesan cheese, mint, pomegranate molasses, balsamic dressing, lemon and olive oil.",
+          "image": "",
+          "price": 16
+        },
+        {
+          "name": "ISTANBUL SALAD",
+          "description": "Red onion, tomato, parsley, balsamic dressing, pomegranate molasses, olive oil and lemon.",
+          "image": "",
+          "price": 14
+        },
+        {
+          "name": "GAVURDAGI SALAD",
+          "description": "Tomato, green pepper, red onion, parsley, pomegranate molasses, walnuts, olive oil and lemon.",
+          "image": "",
+          "price": 17
+        },
+        {
+          "name": "EGE'NIN INCISI",
+          "description": "Red cabbage, carrot, corn, radish, pomegranate molasses, cherry tomatoes, lemon and olive oil.",
+          "image": "",
+          "price": 14
+        }
+      ],
+      "image": "/assets/images/resource/menu-01.png"
+    },
+    {
+      "name": "Soups",
+      "items": [
+        {
+          "name": "MERCIMEK ÇORBASI",
+          "description": "Lentil soup.",
+          "image": "",
+          "price": 11
+        },
+        {
+          "name": "KELLE-PAÇA ÇORBASI",
+          "description": "Traditional Turkish soup made with beef tongue.",
+          "image": "",
+          "price": 14
+        }
+      ],
+      "image": "/assets/images/resource/menu-01.png"
+    },
+    {
+      "name": "Grill",
+      "items": [
+        {
+          "name": "ADANA KEBAB",
+          "description": "Spicy ground beef & lamb grilled on skewers, served with bulgur, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 29
+        },
+        {
+          "name": "URFA KEBAB",
+          "description": "Mild ground beef & lamb grilled on skewers, served with bulgur, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 29
+        },
+        {
+          "name": "FISTIKLI KEBAB",
+          "description": "Ground beef & lamb with pistachio, served with cheese bread, bulgur, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 37
+        },
+        {
+          "name": "TAVUK ADANA",
+          "description": "Spicy ground chicken grilled on skewers, served with rice, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 29
+        },
+        {
+          "name": "MANGAL SPECIAL KEBAB",
+          "description": "Ground beef & lamb with fillet, pistachio and cheese on top, served with cheese bread, bulgur, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 44
+        },
+        {
+          "name": "YOĞURTLU KEBAB",
+          "description": "Ground beef & lamb kebab, grilled and served over pita with yogurt.",
+          "image": "",
+          "price": 30
+        },
+        {
+          "name": "DOMATESLI KEBAB",
+          "description": "Grilled ground beef & lamb with tomato, served with bulgur, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 32
+        },
+        {
+          "name": "BASMA ADANA FIRIN BEYTI",
+          "description": "Oven-baked lavash wrap filled with ground beef & lamb, pistachio, mushrooms, mozzarella and tomato, served with yogurt.",
+          "image": "",
+          "price": 31
+        },
+        {
+          "name": "BEYTI KEBAB",
+          "description": "Grilled spiced ground beef & lamb, wrapped in lavash, sliced and served with yogurt, tomato sauce and butter and spicy ezme.",
+          "image": "",
+          "price": 30
+        },
+        {
+          "name": "KUZU ŞIŞ",
+          "description": "Lamb skewer served with bulgur, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 37
+        },
+        {
+          "name": "KUZU CÖP ŞIŞ",
+          "description": "Spiced, fatty lamb skewers made from smaller cuts, served with bulgur, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 44
+        },
+        {
+          "name": "TAVUK ŞIŞ",
+          "description": "Chicken skewer served with rice, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 29
+        },
+        {
+          "name": "KABURGA",
+          "description": "Lamb ribs served with bulgur, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 38
+        },
+        {
+          "name": "TAVUK PIRZOLA",
+          "description": "Grilled chicken thigh chops served with rice, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 30
+        },
+        {
+          "name": "KANAT IZGARA",
+          "description": "Chicken wings served with rice, roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 29
+        },
+        {
+          "name": "PATLICANLI KEBAB",
+          "description": "Grilled ground beef & lamb kebab with eggplant, served with lavash, roasted tomato and pepper.",
+          "image": "",
+          "price": 32
+        },
+        {
+          "name": "DANA BONFILE",
+          "description": "Premium cut of lean and buttery-soft beef tenderloin, grilled and served with creamy mashed potatoes and seasonal vegetables (≈300 g/10.5 oz).",
+          "image": "",
+          "price": 44
+        },
+        {
+          "name": "DANA LOKUM",
+          "description": "Grilled beef medallions served with creamy mashed potatoes and boiled vegetables (≈250 g/8.8 oz).",
+          "image": "",
+          "price": 44
+        },
+        {
+          "name": "ANTRIKOT",
+          "description": "Flavorful and well-marbled ribeye steak, grilled to perfection and served with creamy mashed potatoes and boiled vegetables (≈300 g/10.5 oz).",
+          "image": "",
+          "price": 44
+        },
+        {
+          "name": "SAŞLIK",
+          "description": "Tender marinated beef grilled on skewers, served with crispy fries.",
+          "image": "",
+          "price": 44
+        },
+        {
+          "name": "KÜŞLEME",
+          "description": "Lamb tenderloin served with bulgur, roasted tomato and roasted pepper.",
+          "image": "",
+          "price": 46
+        },
+        {
+          "name": "KUZU LOKUM",
+          "description": "Round lamb loin served with roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 44
+        },
+        {
+          "name": "KUZU PIRZOLA",
+          "description": "Lamb chops served with roasted tomato, roasted pepper and onion salad.",
+          "image": "",
+          "price": 42
+        },
+        {
+          "name": "T-BONE",
+          "description": "T-bone steak cut from the back of the beef, including tenderloin, grilled to order and served with creamy mashed potatoes and seasonal vegetables (≈12 oz/350 g).",
+          "image": "",
+          "price": 44
+        },
+        {
+          "name": "DANA PIRZOLA",
+          "description": "Grilled beef chops cut from the back of the beef, excluding tenderloin, served with creamy mashed potatoes and seasonal vegetables (≈14 oz/400 g).",
+          "image": "",
+          "price": 45
+        },
+        {
+          "name": "KARIŞIK IZGARA (FOR 2)",
+          "description": "Mixed grill platter featuring beef & lamb doner, chicken skewer, beef skewer, lamb ribs, chicken wings, Adana kebab and chicken Adana kebab, served with rice, bulgur, roasted tomato and jalapeño.",
+          "image": "",
+          "price": 90
+        },
+        {
+          "name": "KARIŞIK IZGARA (FOR 4)",
+          "description": "Mixed grill platter featuring beef & lamb doner, chicken skewer, beef skewer, lamb ribs, chicken wings, Adana kebab and chicken Adana kebab, served with rice, bulgur, roasted tomato and jalapeño.",
+          "image": "",
+          "price": 175
+        }
+      ],
+       "image": "/assets/images/resource/menu-01.png"
+    },
+    {
+      "name": "Doners",
+      "items": [
+        {
+          "name": "YAPRAK DÖNER PLATE",
+          "description": "Thinly sliced beef & lamb doner served with rice, pita, fries, fresh salad.",
+          "image": "",
+          "price": 27
+        },
+        {
+          "name": "İSKENDER",
+          "description": "Beef & lamb doner served over pita, topped with warm tomato butter and yogurt, with grilled tomato and pepper.",
+          "image": "",
+          "price": 30
+        }
+      ],
+       "image": "/assets/images/resource/menu-01.png"
+    },
+    {
+      "name": "Pan Dishes",
+      "items": [
+        {
+          "name": "ALI NAZIK",
+          "description": "Sautéed beef served over babaganoush, with grilled tomato and pepper.",
+          "image": "",
+          "price": 30
+        },
+        {
+          "name": "TAVUK TAVA",
+          "description": "Sautéed chicken with tomato, pepper and garlic.",
+          "image": "",
+          "price": 30
+        },
+        {
+          "name": "ÇOBAN KAVURMA",
+          "description": "Sautéed lamb with tomato, pepper and garlic.",
+          "image": "",
+          "price": 28
+        },
+        {
+          "name": "KARIDES TAVA",
+          "description": "Sautéed shrimp with tomato, pepper and garlic.",
+          "image": "",
+          "price": 34
+        },
+        {
+          "name": "ET TAVA",
+          "description": "Sautéed beef with tomato, pepper and garlic.",
+          "image": "",
+          "price": 30
+        },
+        {
+          "name": "MANGAL KÖRI SOSLUM",
+          "description": "Curry chicken served with creamy pasta and fresh salad.",
+          "image": "",
+          "price": 30
+        },
+        {
+          "name": "ÇÖKERTME KEBABI",
+          "description": "Grilled beef served over crispy shoestring fries, topped with yogurt and tomato butter.",
+          "image": "",
+          "price": 30
+        },
+        {
+          "name": "MANGAL KEKIKLIM",
+          "description": "Chicken with fresh thyme and cream sauce, served with pasta and fresh salad.",
+          "image": "",
+          "price": 30
+        }
+      ],
+       "image": "/assets/images/resource/menu-01.png"
+    },
+    {
+      "name": "From the Oven",
+      "items": [
+        {
+          "name": "KIYMALI PIDE",
+          "description": "Flatbread topped with seasoned ground beef, tomato and green pepper.",
+          "image": "",
+          "price": 25
+        },
+        {
+          "name": "KUŞBAŞILI PIDE",
+          "description": "Flatbread with diced beef, tomato and green pepper.",
+          "image": "",
+          "price": 25
+        },
+        {
+          "name": "YUMURTALI SUCUKLU KAŞARLI PIDE",
+          "description": "Flatbread with Turkish beef sujuk, egg and melted mozzarella cheese.",
+          "image": "",
+          "price": 25
+        },
+        {
+          "name": "KAŞARLI-SUCUKLU PIDE",
+          "description": "Flatbread with Turkish beef sujuk and mozzarella cheese.",
+          "image": "",
+          "price": 25
+        },
+        {
+          "name": "KARIŞIK PIDE",
+          "description": "Flatbread topped with ground beef, diced beef (kuşbaşı), Turkish beef sujuk and mozzarella cheese.",
+          "image": "",
+          "price": 25
+        },
+        {
+          "name": "SEBZELI PIDE",
+          "description": "Flatbread topped with mushrooms, tomato, green pepper and mozzarella cheese.",
+          "image": "",
+          "price": 22
+        },
+        {
+          "name": "ISPANAKLI PIDE",
+          "description": "Flatbread with sautéed spinach, red bell pepper and mozzarella cheese.",
+          "image": "",
+          "price": 22
+        },
+        {
+          "name": "MANTARLI PIDE",
+          "description": "Flatbread with sautéed mushrooms and mozzarella cheese.",
+          "image": "",
+          "price": 22
+        },
+        {
+          "name": "KAŞARLI PIDE",
+          "description": "Flatbread with melted mozzarella cheese.",
+          "image": "",
+          "price": 22
+        },
+        {
+          "name": "LAHMACUN",
+          "description": "Thin dough topped with ground beef, garlic, tomato, green pepper and parsley.",
+          "image": "",
+          "price": 22
+        }
+      ],
+       "image": "/assets/images/resource/menu-01.png"
+    },
+    {
+      "name": "Pasta",
+      "items": [
+        {
+          "name": "MANTI",
+          "description": "Turkish beef ravioli served with yogurt and melted butter.",
+          "image": "",
+          "price": 30
+        },
+        {
+          "name": "TAVUKLU FETTUCCINE",
+          "description": "Chicken pasta with mushrooms, cream sauce and parmesan cheese.",
+          "image": "",
+          "price": 27
+        },
+        {
+          "name": "VEJETARYEN MAKARNA",
+          "description": "Vegetarian pasta with mushrooms, vegetables, cream sauce and parmesan cheese.",
+          "image": "",
+          "price": 25
+        },
+        {
+          "name": "DOMATES SOSLU PENNE ARRABBIATA",
+          "description": "Penne arrabbiata with spicy tomato sauce, grilled pepper, garlic, butter and parmesan cheese.",
+          "image": "",
+          "price": 25
+        },
+        {
+          "name": "KARIDESLI FETTUCCINE",
+          "description": "Shrimp pasta with mushrooms and cream sauce.",
+          "image": "",
+          "price": 29
+        }
+      ],
+       "image": "/assets/images/resource/menu-01.png"
+    },
+    {
+      "name": "Kids",
+      "items": [
+        {
+          "name": "CHICKEN SKEWER",
+          "description": "Grilled chicken skewer served with fries and a complimentary soft drink.",
+          "image": "",
+          "price": 17
+        },
+        {
+          "name": "URFA WRAP",
+          "description": "Lavash-wrapped Urfa-style minced beef & lamb kebab, served with a complimentary soft drink.",
+          "image": "",
+          "price": 20
+        },
+        {
+          "name": "HAMBURGER",
+          "description": "House-made beef & lamb burger served with fries and a complimentary soft drink.",
+          "image": "",
+          "price": 19
+        }
+      ],
+       "image": "/assets/images/resource/menu-01.png"
+    }
+  ]
+}

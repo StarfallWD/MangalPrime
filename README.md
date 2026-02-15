@@ -1,46 +1,57 @@
-# Mangal Prime Landing Page
+# Mangal Prime
 
-A modern, responsive landing page for Mangal Prime with contact form functionality.
+A modern, responsive site for Mangal Prime (Mangal theme) with contact form and Node.js backend.
 
 ## Features
 
-- Responsive design (mobile-friendly)
-- Contact form with email integration
-- Social media links (Instagram, Facebook)
-- Node.js backend with Express
-- SMTP email sending via Nodemailer
+- Mangal theme (Home, Menu, About, Contact)
+- Contact form with email integration (Nodemailer)
+- Node.js + Express with route modules
 
-## Installation
+## How to start
 
-1. Install dependencies:
+### 1. Install dependencies
+
 ```bash
 npm install
 ```
 
-2. Configure environment variables:
-   - Copy `env.example.txt` to `.env`
-   - Update SMTP settings in `.env`:
-     ```
-     SMTP_HOST=smtp.gmail.com
-     SMTP_PORT=587
-     SMTP_USER=your-email@gmail.com
-     SMTP_PASS=your-app-password
-     PORT=3002
-     ```
+### 2. (Optional) Set port and env
 
-## Running the Application
+To change the port or SMTP settings:
 
-### Development Mode
-```bash
-npm run dev
+- Copy `env.example.txt` to `.env`
+- Edit `.env`, for example:
+
+```env
+PORT=3000
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password
 ```
 
-### Production Mode
+If you don’t create `.env`, the app uses **port 3000** by default.
+
+### 3. Run the server
+
+**Production:**
+
 ```bash
 npm start
 ```
 
-The server will run on `http://localhost:3002` (or the port specified in `.env`).
+**Development (auto-restart on file changes):**
+
+```bash
+npm run dev
+```
+
+### 4. Open in browser
+
+- **http://localhost:3000** (or the port in your `.env`)
+
+Pages: `/` (home), `/menu`, `/about`, `/contact`.
 
 ## SMTP Configuration
 
@@ -54,16 +65,22 @@ For other SMTP providers, update `SMTP_HOST` and `SMTP_PORT` accordingly.
 ## Project Structure
 
 ```
-MangalPrimeLanding/
-├── server.js          # Express server
-├── package.json        # Dependencies
-├── public/            # Frontend files
-│   ├── index.html     # Main HTML
-│   ├── styles.css     # Styles
-│   └── script.js      # Client-side JavaScript
-├── assets/            # Static assets (logo, images)
-│   └── logo.jpg
-└── .env              # Environment variables (create from env.example.txt)
+mangal-prime/
+├── server.js           # Express app entry
+├── routes/             # Page routes
+│   ├── index.js        # GET /
+│   ├── menu.js         # GET /menu
+│   ├── about.js        # GET /about
+│   └── contact.js      # GET /contact, POST /api/contact
+├── views/              # HTML pages (Mangal theme)
+│   ├── index.html
+│   ├── menu.html
+│   ├── about.html
+│   └── contact.html
+├── public/             # Static files
+│   ├── assets/         # Theme CSS, JS, images
+│   └── ...
+└── .env                # Optional (copy from env.example.txt)
 ```
 
 ## Contact Form
