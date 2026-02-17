@@ -214,6 +214,10 @@
         var ourChoiceTabs = document.getElementById('our-choice-menu-tabs');
         if (ourChoiceTabs) {
           buildOurChoiceTabsContent(ourChoiceTabs, categories);
+          // Menu page: use single image for all tabs (desktop bg overridden in CSS; set mobile img src here)
+          var tabImgs = ourChoiceTabs.querySelectorAll('.tab__img_feature_image img');
+          var menuTabImage = '/assets/images/resource/customer-left-01.png';
+          tabImgs.forEach(function (img) { img.src = menuTabImage; });
         }
       })
       .catch(function (err) {

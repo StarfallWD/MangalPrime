@@ -11,11 +11,13 @@ function itemHtml(item) {
   return '<li><ul class="name__price"><li>' + esc(item.name) + '</li><li>' + esc(price) + '</li></ul><p>' + esc(item.description || '') + '</p></li>';
 }
 
+const MENU_TAB_IMAGE = '/assets/images/resource/customer-left-01.png';
+
 function menuBlockHtml(items, showTitle) {
   const itemsHtml = items.map(itemHtml).join('');
   const titleBlock = showTitle ? '<div class="sub____title"><span>' + esc(showTitle) + '</span></div>' : '';
   return (
-    '<div class="col-lg-4 col-md-12 col-sm-12">' +
+    '<div class="col-lg-3 col-md-12 col-sm-12">' +
     '<div class="menu__text__block">' +
     titleBlock +
     '<div class="menu__list">' +
@@ -25,9 +27,9 @@ function menuBlockHtml(items, showTitle) {
 }
 
 function tabImgHtml(imgUrl) {
-  const src = imgUrl || '/assets/images/resource/menu-01.png';
+  const src = imgUrl || MENU_TAB_IMAGE;
   return (
-    '<div class="col-lg-4 col-md-12 col-sm-12">' +
+    '<div class="col-lg-3 col-md-12 col-sm-12 menu-tab__img-col">' +
     '<div class="tab__img" style="background-image: url(' + esc(src) + ');">' +
     '<div class="tab__img_feature_image">' +
     '<img class="d-block d-lg-none" src="' + esc(src) + '" alt="">' +
@@ -41,21 +43,24 @@ menu.categories.forEach((cat, i) => {
   const active = i === 0 ? 'tab active-tab' : 'tab';
   const style = i === 0 ? '' : ' style="display:none;"';
   const items = cat.items || [];
-  const imgUrl = cat.image || '/assets/images/resource/menu-01.png';
 
-  // Split items into two columns (original layout: 2 menu blocks + 1 image)
-  const mid = Math.ceil(items.length / 2);
-  const col1Items = items.slice(0, mid);
-  const col2Items = items.slice(mid);
+  // Image first, then 3 menu columns
+  const third = Math.ceil(items.length / 3);
+  const col1Items = items.slice(0, third);
+  const col2Items = items.slice(third, third * 2);
+  const col3Items = items.slice(third * 2);
 
-  const col1 = menuBlockHtml(col1Items, cat.name);
-  const col2 = col2Items.length > 0 ? menuBlockHtml(col2Items, null) : '';
-  const imgCol = tabImgHtml(imgUrl);
+  const imgCol = tabImgHtml(MENU_TAB_IMAGE);
+  const col1 = menuBlockHtml(col1Items, null);
+  const col2 = menuBlockHtml(col2Items, null);
+  const col3 = menuBlockHtml(col3Items, null);
 
-  const cols = col2 ? [col1, col2, imgCol] : [col1, imgCol];
+  const cols = [col1, col2, col3, imgCol];
+  const headingRow = '<div class="row clearfix"><div class="col-12"><div class="sub____title"><span>' + esc(cat.name) + '</span></div></div></div>';
 
   html += '<div class="' + active + '" id="' + tid + '"' + style + '>' +
     '<div class="inner-box">' +
+    headingRow +
     '<div class="row clearfix">' +
     cols.join('') +
     '</div></div></div>';

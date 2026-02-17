@@ -46,6 +46,12 @@ section:has(.main____title.p_relative) .food__block__bottom .view-btn {
   display: none !important;
 }
 
+/* Menu page: use single image for all tab images (both themes), keep on right, contain */
+#our-choice-menu-tabs .tab__img {
+  background-image: url(/assets/images/resource/customer-left-01.png) !important;
+  background-size: contain;
+}
+
 /* Menu section buttons */
 .menu__from__section__buttons {
   display: flex;
