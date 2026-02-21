@@ -894,12 +894,12 @@ div#mCSB_1_container{
   position: relative;
   display: block;
   font-size: 15px;
-  color: rgba(255,255,255,0.80);
+  color: #2c2820;
   margin-bottom: 3px;
 }
 
 .mobile-menu .contact-info ul li a{
-  color: rgba(255,255,255,0.80);
+  color: #2c2820;
 }
 
 
@@ -1552,6 +1552,7 @@ div#mCSB_1_container{
   position: relative;
   width: 90px;
   height: 90px;
+  margin-bottom: 20px;
 }
 .food__left__content .food____content:hover .food___img___block:before {
   transform: scale(1,1);
@@ -1580,7 +1581,6 @@ div#mCSB_1_container{
   height: 403px;
   z-index: 99;
   bottom: 0;
-  opacity: 0.4;
   left: 527px;
 }
 
@@ -1738,7 +1738,7 @@ section.menu__from__section .swiper-slide .menu__img__block img{
   bottom: 0px;
   z-index: 50;
   height: 5px;
-  background: #131D20;
+  background: #cbbcb2;
   width: 100%;
 }
 .menu__from__section .swiper-container-horizontal > .swiper-scrollbar {
@@ -2360,11 +2360,11 @@ footer.main-footer {
   overflow: hidden;
 }
 footer.main-footer .auto-container > .row {
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid #d4cfc4;
 }
 .footer__title {
   padding: 108px 0px 91px 235px;
-  border-right: 1px solid var(--secondary-color);
+  border-right: 1px solid #d4cfc4;
 }
 .footer__title .footer__title__icon{
   padding-bottom: 17px;
@@ -4471,7 +4471,7 @@ section.product__section.two .food__left__content .row > *:nth-child(2){
 .page-title:before {
   position: absolute;
   content: '';
-  background: rgba(11, 15, 21, 0.6);
+  background: transparent;
   width: 100%;
   height: 100%;
   left: 0px;
@@ -4677,7 +4677,7 @@ textarea {
   padding-top: 120px;
 }
 .contact__top .address {
-  background: #101720;
+  background: #f0ece5;
   border-radius: 10px;
   padding: 50px 30px;
   text-align: center;
@@ -4686,13 +4686,13 @@ textarea {
 .contact__top .address .ion__outer {
   width: 75px;
   height: 75px;
-  background: #14262D;
+  background: #d1cabd;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto 35px;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #f0ece5;
   font-size: 25px;
 }
 .contact__top .address .address__text span {
@@ -4705,7 +4705,7 @@ textarea {
   padding-top: 15px;
 }
 .contact__top .address .address__text p a {
-  color: #B0B0B0;
+  color: inherit;
 }
 .contact__top .address .address__text p a:hover {
   color: var(--theme-color);

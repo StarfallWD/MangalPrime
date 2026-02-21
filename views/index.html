@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <script>
 (function() {
   try {
-    if (localStorage.getItem('mangal-theme') === 'light') {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('mangal-theme', 'light');
   } catch (e) {}
 })();
 </script>
@@ -116,7 +115,6 @@
                                     <li><a href="/menu">Menu</a></li>
                                     <li><a href="/order">Order Online</a></li>
                                     <li><a href="/contact">Contact</a></li>
-                                    <li><a href="#" class="theme-toggle-link" role="button" aria-pressed="false" aria-label="Switch to light theme">Light theme</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -140,6 +138,11 @@
                             <nav class="main-menu clearfix">
                                 <!--Keep This Empty / Menu will come through Javascript-->
                             </nav>
+                        </div>
+                        <div class="header__right">
+                            <div class="btn-box">
+                                <a href="https://www.opentable.ca/r/mangal-prime-richmond-hill" target="_blank" rel="noopener noreferrer" class="theme-btn-two">Reservation</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -177,6 +180,11 @@
             <div class="close-btn side-navigation-close-btn"><i class="fas fa-times"></i></div>
             <div class="sidebar-content">
                 <div class="nav-logo"><a href="/"><img src="/assets/images/mangal-prime.svg" alt="" title=""></a></div>
+                <div class="sidebar-about">
+                    <h2 class="sidebar-about__title">Where Heritage Meets Luxury.</h2>
+                    <p>Mangal Prime was born from a simple conviction: the finest Turkish dining in the Greater Toronto Area need not live only in the heart of the city. It began with Mangal Kebab House—a place that earned the trust of Scarborough and beyond with authentic flavours, generous hospitality, and a commitment to quality that never wavered.</p>
+                    <p>That same soul now finds a new expression in Richmond Hill. We honour the richness of Turkish cuisine—the smoke of the mangal, the silk of yogurt and brown butter, the crackle of fresh lavash. Every visit is an invitation to slow down, savour, and be cared for. This is fine dining in Toronto's north: authentic, luxurious, and unmistakably Mangal.</p>
+                </div>
             </div>
             <div class="sidebar-social-network">
                 <div class="title__social">
@@ -311,7 +319,7 @@
                                             <h6>Premium Ingredients</h6>
                                             <p>We source the finest lamb, beef, and seasonal produce for every dish. Quality is non-negotiable—each plate reflects our commitment to authentic Turkish flavours and luxury dining in Toronto.</p>
                                             <div class="more__button">
-                                                <a href="/menu">View Menu</a>
+                                                <span>View Menu</span>
                                             </div>
                                         </div>
                                     </div>
@@ -329,7 +337,7 @@
                                             <h6>Masterful Craft</h6>
                                             <p>Our chefs honour time-honoured techniques—from the grill to the stone oven—while elevating each creation with precision and care. Every dish is a testament to Turkish culinary artistry.</p>
                                             <div class="more__button">
-                                                <a href="/about">Our Story</a>
+                                                <span>Our Story</span>
                                             </div>
                                         </div>
                                     </div>
@@ -347,7 +355,7 @@
                                             <h6>Bar & Beverage</h6>
                                             <p>Complement your meal with a curated selection of wines, craft cocktails, and traditional offerings. Our bar programme is designed to enhance the finest Turkish dining experience.</p>
                                             <div class="more__button">
-                                                <a href="/menu">View Menu</a>
+                                                <span>View Menu</span>
                                             </div>
                                         </div>
                                     </div>
@@ -365,7 +373,7 @@
                                             <h6>Warm Hospitality</h6>
                                             <p>Turkish tradition is rooted in generosity and care. From the moment you arrive—valet at the door, a table held in your name—you are welcomed as a guest, not just a diner.</p>
                                             <div class="more__button">
-                                                <a href="https://www.opentable.ca/r/mangal-prime-richmond-hill" target="_blank" rel="noopener noreferrer">Reserve</a>
+                                                <span>Reserve</span>
                                             </div>
                                         </div>
                                     </div>
@@ -501,7 +509,7 @@
                     </div>
                     <div class="food__block__bottom">
                         <h4> <a href="portfolio-details.html">Mixed Grills</a> </h4>
-                        <span class="sub____title">Grill</span>
+                        <span class="sub____title">Grills</span>
                     </div>
                 </div>
                 <div class="food-block-one two">
@@ -554,6 +562,48 @@
                                        </figure>
                                     </div>
                                     <div class="inner__box__right">
+                                       <h5>Goli Tohidi</h5>
+                                       <span>Google Review</span>
+                                       <div class="client__des">
+                                           <p>We went there as a group of 15 to celebrate a friend's birthday, and from the beginning, the staff were very welcoming and kind. The kebabs were delicious—juicy, tender, and full of flavor. One of the best Turkish restaurants I've been to. Special thanks to our servers, Melika and Ece, for their great service. Highly recommended for anyone who loves Turkish kebabs!</p>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="client_block_one">
+                                    <div class="inner__box__left">
+                                       <figure>
+                                           <img src="/assets/images/resource/customer.png" alt="">
+                                       </figure>
+                                    </div>
+                                    <div class="inner__box__right">
+                                       <h5>Marjona Tolibova</h5>
+                                       <span>Google Review</span>
+                                       <div class="client__des">
+                                           <p>We came for Iftar at Mangal Prime and had a wonderful experience. The food was delicious and full of flavor. Our server, Melike, provided great service — very kind and attentive. Everything was perfect. We will definitely come back!</p>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="client_block_one">
+                                    <div class="inner__box__left">
+                                       <figure>
+                                           <img src="/assets/images/resource/customer.png" alt="">
+                                       </figure>
+                                    </div>
+                                    <div class="inner__box__right">
+                                       <h5>H M</h5>
+                                       <span>Google Review</span>
+                                       <div class="client__des">
+                                           <p>Amazing experience! The service was outstanding, and our server Narjas was incredibly friendly, attentive, and made sure everything was perfect. The atmosphere was great, and I'd definitely come back again. Highly recommend!</p>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="client_block_one">
+                                    <div class="inner__box__left">
+                                       <figure>
+                                           <img src="/assets/images/resource/customer.png" alt="">
+                                       </figure>
+                                    </div>
+                                    <div class="inner__box__right">
                                        <h5>Eva</h5>
                                        <span>OpenTable review</span>
                                        <div class="client__des">
@@ -561,6 +611,9 @@
                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="testimonials-view-all" style="margin-top: 1.5rem;">
+                                <a href="https://www.google.com/maps/place/Mangal+Prime/@43.8677601,-79.4322959,15z/data=!4m8!3m7!1s0x882b2b001202cbdd:0xb66bd040b74a1bf!8m2!3d43.8645088!4d-79.4362203!9m1!1b1!16s%2Fg%2F11yzt60dq9?entry=ttu" target="_blank" rel="noopener noreferrer" class="theme-btn-two">View All</a>
                             </div>
                         </div>
                     </div>

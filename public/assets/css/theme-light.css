@@ -113,11 +113,11 @@ html[data-theme="light"] .food__block__bottom h4 a {
 
 /* Food left content: circle overlay and img__block border in light theme */
 html[data-theme="light"] .food__left__content .food___img___block:before {
-  background: #d9d1c4;
-  border: 1px solid #d9d1c4;
+  background: #a71929;
+
 }
 html[data-theme="light"] .food__left__content .img__block {
-  border-color: #d9d1c4;
+  border-color: #c1afa4;
 }
 
 /* Breadcrumb / page-title: use bc-light.jpg and light beige overlay in light theme */
@@ -126,7 +126,7 @@ html[data-theme="light"] .page-title .bg-layer.parallax-bg {
   background-image: url(../images/background/bc-light.jpg) !important;
 }
 html[data-theme="light"] .page-title:before {
-  background: rgba(240, 236, 229, 0.55);
+  background: transparent;
 }
 
 /* Theme toggle link in nav – same style as other nav links */

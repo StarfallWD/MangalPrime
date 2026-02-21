@@ -1022,14 +1022,22 @@
 		if (saved === 'light') {
 			applyTheme(true);
 		} else {
-			setLogos(false);
-			setHeroImages(false);
+			applyTheme(false);
 		}
 
 		$(document).on('click', '.theme-toggle-link', function(e) {
 			e.preventDefault();
 			applyTheme(!isLightTheme());
 		});
+	}
+
+	// Apply light-theme assets on every page when data-theme="light" (logos, hero images)
+	if (isLightTheme()) {
+		setLogos(true);
+		setHeroImages(true);
+	} else {
+		setLogos(false);
+		setHeroImages(false);
 	}
 
 })(window.jQuery);

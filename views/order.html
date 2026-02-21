@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <script>
 (function() {
   try {
-    if (localStorage.getItem('mangal-theme') === 'light') {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('mangal-theme', 'light');
   } catch (e) {}
 })();
 </script>
@@ -74,11 +73,11 @@
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li><a href="/">Home</a></li>
+                                    <li><a href="/about">About</a></li>
                                     <li><a href="/menu">Menu</a></li>
                                     <li><a href="/order">Order Online</a></li>
                                     <li><a href="/contact">Contact</a></li>
                                     <li><a href="https://www.opentable.ca/r/mangal-prime-richmond-hill" target="_blank" rel="noopener noreferrer">Reservation</a></li>
-                                    <li><a href="#" class="theme-toggle-link" role="button" aria-pressed="false" aria-label="Switch to light theme">Light theme</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -99,6 +98,11 @@
                         <div class="menu-area">
                             <nav class="main-menu clearfix"></nav>
                         </div>
+                        <div class="header__right">
+                            <div class="btn-box">
+                                <a href="https://www.opentable.ca/r/mangal-prime-richmond-hill" target="_blank" rel="noopener noreferrer" class="theme-btn-two">Reservation</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,7 +120,12 @@
         <section class="hidden-sidebar side-navigation">
             <div class="close-btn side-navigation-close-btn"><i class="fas fa-times"></i></div>
             <div class="sidebar-content">
-                <div class="nav-logo"><a href="/"><img src="/assets/images/mangal-prime.svg" alt=""></a></div>
+                <div class="nav-logo"><a href="/"><img src="/assets/images/mangal-prime.svg" alt="" title=""></a></div>
+                <div class="sidebar-about">
+                    <h2 class="sidebar-about__title">Where Heritage Meets Luxury.</h2>
+                    <p>Mangal Prime was born from a simple conviction: the finest Turkish dining in the Greater Toronto Area need not live only in the heart of the city. It began with Mangal Kebab House—a place that earned the trust of Scarborough and beyond with authentic flavours, generous hospitality, and a commitment to quality that never wavered.</p>
+                    <p>That same soul now finds a new expression in Richmond Hill. We honour the richness of Turkish cuisine—the smoke of the mangal, the silk of yogurt and brown butter, the crackle of fresh lavash. Every visit is an invitation to slow down, savour, and be cared for. This is fine dining in Toronto's north: authentic, luxurious, and unmistakably Mangal.</p>
+                </div>
             </div>
         </section>
 

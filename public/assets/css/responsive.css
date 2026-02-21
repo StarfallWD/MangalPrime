@@ -705,16 +705,27 @@
   .main-header.style-three .header-lower{
     border-bottom: none;
   }
+  .our__choice__section .tab-btns {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    gap: 0;
+  }
+  .our__choice__section .tab-btn-box {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
   .our__choice__section .tab-btns li {
-    display: block;
-    padding: 15px 0px 0px 0px;
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 15px 12px 15px 0;
   }
   .our__choice__section .tab-btns li:last-child {
-    display: block;
-    padding: 15px 0px 15px 0px;
-  }
-  .our__choice__section .tab-btns {
-    margin-bottom: 20px;
+    padding: 15px 0 15px 0;
   }
   .banner-section.style-four .banner-carousel .owl-dots{
     display: none;

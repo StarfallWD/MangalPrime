@@ -3,8 +3,36 @@
   width: 196px !important;
 }
 
+/* Hide Reservation nav link on desktop (keep the header button; avoid duplicate) */
+@media only screen and (min-width: 992px) {
+  .main-header .main-menu .navigation li:has(a[href*="opentable"]) {
+    display: none !important;
+  }
+}
+
+/* Hide Reservation button only when mobile menu is active (keep until then) */
+@media only screen and (max-width: 991px) {
+  .main-header .header__right .btn-box,
+  .main-header .sticky-header .header__right .btn-box {
+    display: none !important;
+  }
+}
+
+/* Show header__right (Reservation) between desktop and mobile – override responsive.css at 1449px */
+@media only screen and (min-width: 992px) and (max-width: 1449px) {
+  header.main-header.style-one .header__right {
+    display: flex !important;
+    align-items: center;
+  }
+}
+
 .main-header .sticky-header .logo-box {
   max-width: 168px !important;
+}
+
+/* Temporary: hide menu tab image column until images are ready */
+.menu-tab__img-col {
+  display: none !important;
 }
 
 /* Banner slider image - full width of slide-item */
@@ -69,6 +97,12 @@ section:has(.main____title.p_relative) .food__block__bottom .view-btn {
   margin-top: 20px;
 }
 
+/* Food section (homepage) – beige overlay on owl items instead of dark gray */
+.food__section .food-block-one .inner-box .lower-content {
+  background: rgba(219, 208, 200, 0.35);
+  border-color: #c1afa4;
+}
+
 /* Hide avatar images from testimonials section */
 .customer__section .client_block_one .inner__box__left {
   display: none !important;
@@ -113,9 +147,75 @@ section:has(.main____title.p_relative) .food__block__bottom .view-btn {
   transform: rotate(360deg);
 }
 
+/* Side-navigation: use full width for Our Story (override default max-width: 190px) */
+.hidden-sidebar.side-navigation .sidebar-content {
+  max-width: none;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.hidden-sidebar.side-navigation .sidebar-social-network {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Side-navigation Our Story: subtitle, heading, content */
+.hidden-sidebar .sidebar-about {
+  margin-top: 24px;
+}
+.hidden-sidebar .sidebar-about__title {
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 0 0 16px;
+  font-weight: 600;
+}
+.hidden-sidebar .sidebar-about p {
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 0 0 14px;
+  color: inherit;
+}
+.hidden-sidebar .sidebar-about p:last-child {
+  margin-bottom: 0;
+}
+
+/* Page-title: no overlay; title (h1) light beige */
+.page-title .content-box h1 {
+  color: #f0ece5;
+}
+
+/* Page-title: breadcrumbs light beige */
+.page-title .breadcrumb .breadcrumb-item,
+.page-title .breadcrumb .breadcrumb-item a {
+  color: #f0ece5;
+}
+.page-title .breadcrumb .breadcrumb-item a:hover {
+  color: #fff;
+}
+.page-title .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: #d1cabd;
+}
+.page-title .breadcrumb .breadcrumb-item.active {
+  color: #f0ece5;
+}
+
 /* Contact page – spacing below contact info block */
 .contact__top {
   padding-bottom: 3rem;
+}
+
+/* Equal-height contact address boxes */
+.contact__top .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact__top .row > [class*="col-"] {
+  display: flex;
+}
+.contact__top .address {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
 }
 
 /* Hide Order Online link for now */
